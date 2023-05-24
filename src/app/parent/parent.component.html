@@ -1,0 +1,36 @@
+how many tickets ?
+<button (click)="onfun()">click</button>
+<div>
+    <button (click)="increment()">+</button>
+    {{counter}}
+    <button (click)="decrement()">-</button>
+</div>
+
+<button (click)="onContinue()">continue</button>
+<hr>
+
+<div class="outer">
+        <div class="inner">
+            <div class="main" *ngFor="let data of seat1; let i = index">
+               <button (click)="onSelect(i)"> {{data}}</button>
+            </div>
+        </div>
+        
+        <div class="inner">
+            <div class="main" *ngFor="let data of seat2; let i = index">
+               <button (click)="onSelect(i+7)"> {{data}}</button>
+            </div>
+        </div>
+
+        <div class="inner">
+            <div class="main" *ngFor="let data of seat3; let i = index">
+               <button (click)="onSelect(i+14)"> {{data}}</button>
+            </div>
+        </div>
+
+        <div class="inner">
+            <div class="main" *ngFor="let data of seat4; let i = index">
+                <button (click)="onSelect(i+21)">{{data}}</button>
+            </div>
+        </div>
+</div>

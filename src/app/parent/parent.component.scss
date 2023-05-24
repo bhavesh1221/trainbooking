@@ -1,0 +1,13 @@
+.outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.main{
+    border: 1px solid ;
+    width: 30px;
+}
+.inner{
+    margin-bottom: 10px;
+}
