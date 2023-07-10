@@ -1,23 +1,21 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component';
 import { RoutingModule } from './routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { Screen1Component } from './components/screen1/screen1.component';
+import { Screen2Component } from './components/screen2/screen2.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
-    ChildComponent
+    Screen1Component,
+    Screen2Component
   ],
-   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+ 
   imports: [
     BrowserModule,
     RoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

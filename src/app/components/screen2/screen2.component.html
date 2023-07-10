@@ -1,0 +1,21 @@
+
+<h4 class="cstm-m">Screen 2</h4>
+<p class="cstm-m">Output should be seats numbers that have been booked for the user along with the display of all the
+  seats and their availability status through color or number or anything else that you may feel fit</p>
+<div class="container">
+  <h3>You have Booked Seats number - {{bookedSeats}} </h3>
+</div>
+<div class="outer">
+    <div class="inner">
+      <div class="main" *ngFor="let group of seatGroups">
+        <ng-container *ngFor="let data of group">
+          <p id="{{data.id}}">{{data.seat}}</p>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h5> 1 - Red Blocks shows the Reserved Seats</h5>
+    <h5>2 - Green Shows Empty Seats</h5>
+  </div>
+

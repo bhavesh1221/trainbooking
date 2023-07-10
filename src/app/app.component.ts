@@ -14,33 +14,11 @@ interface Item {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent  implements OnInit {
-  loginForm: FormGroup;
-  btn = false;
-  constructor(private formBuilder: FormBuilder) {
-    this.loginForm = this.formBuilder.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required]
-    });
-  }
   
   ngOnInit(): void {
    
   }
   
-
-  // @Output() login: EventEmitter<any> = new EventEmitter();
-
-  // onChange(){
-  //   if(this.loginForm.value.username != "" && this.loginForm.value.password != ""){
-  //     this.btn = true
-  //   }
-  // }
-  // onSubmit() {
-  //   if (this.loginForm.valid) {
-  //     const { username, password } = this.loginForm.value;
-  //     this.login.emit({ username, password });
-  //   }
-  // }
   
 }
 

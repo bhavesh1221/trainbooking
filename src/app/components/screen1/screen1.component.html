@@ -1,0 +1,25 @@
+<h3 class="cstm-m">All Given Conditions are covered</h3>
+<h4 class="cstm-m">Screen 1 </h4>
+<p>As given in the condition to book some seats, so i have booked 2 seats, that is why available number of seats are shown 78 before booking any seat</p>
+<p class="cstm-m">Input required will only be the required number of seats. Example: 2 or 4 or 6 or 1 etc..</p>
+<div class="main">
+    <div class="inner">
+       <h2> <strong>WELCOME</strong> </h2>
+       <h3> Please Select Number Seats</h3>
+        <div>
+            <button class="custom-wh" (click)="decrement()">-</button>
+            <span style="
+                font-size: 20px;
+                "> {{counter}}</span>
+            <button class="custom-wh" [disabled]="myData[this.myData.length-1] == 80" (click)="increment()">+</button>
+        </div>
+        <p style="color: red;" *ngIf="myData[this.myData.length-1] == 80">No Seats Available</p>
+        
+
+        <button [disabled]="counter == 0" class="book-btn" (click)="onContinue()">Book Ticket</button>
+        
+        <p>Note: You can select maximum of 7 seats per booking</p>
+        <p> {{ 80 - myData[myData.length-1] || 80}} - Seats are left</p>
+    </div>
+</div>
+<router-outlet></router-outlet>

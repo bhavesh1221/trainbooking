@@ -1,0 +1,31 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.inner {
+    text-align: center;
+}
+.custom-wh{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 10px 10px;
+    background: #cbcaf3;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.book-btn{
+    background: #82ff82;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    cursor: pointer;
+    width: 95px;
+}
+.cstm-m{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,22 @@
+.inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+}
+span{
+    margin-bottom: 10px;
+}
+.main{
+    width: 30px;
+}
+p{
+    background-color: #5cff5c;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.cstm-m{
+    background: none;
+    border: none;
+}
